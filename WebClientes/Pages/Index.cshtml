@@ -1,0 +1,26 @@
+﻿@page
+@model IndexModel
+
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <div class="text-center">
+        
+        <div class="form-group">
+            <label asp-for="usuario.Email" class="control-label"></label>
+            <input asp-for="usuario.Email" class="form-control" />
+            <span asp-validation-for="usuario.Email" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="usuario.Email" class="control-label"></label>
+            <input asp-for="usuario.Email" class="form-control" />
+            <span asp-validation-for="usuario.Email" class="text-danger"></span>
+        </div>
+        <a asp-page="Clientes/Index">Login</a>
+        <div class="form-group">
+            <input type="submit" value="Login" class="btn btn-primary" />
+        </div>
+    </div>
+</div>
